@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-ja leading-relaxed tracking-wider text-theme; /* 日本語のための設定と共通設定 */
+  }
+}
+
+@layer components {
+  .text-body {
+    @apply text-base leading-relaxed;
+  }
+
+  .text-heading {
+    @apply text-base font-medium leading-relaxed;
+  }
+
+  .text-page-heading {
+    @apply text-3xl font-medium leading-relaxed;
+  }
+
+  .text-dialog-heading {
+    @apply text-xl font-medium leading-relaxed;
+  }
+
+  .text-msg-dialog-heading {
+    @apply text-lg font-medium leading-relaxed;
+  }
+
+  .text-error-msg {
+    @apply text-sm text-error;
+  }
+}
